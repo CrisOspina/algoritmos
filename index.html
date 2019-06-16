@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Algoritmos</title>
+</head>
+<body>
+  <h1>Ejercicio 1</h1>
+  <!-- 1.Calcular la cantidad de segundos que están incluidos en el número de horas,
+  minutos y segundos ingresados por el usuario. -->
+  <input type="number" id="hora" name="hora"  min="1" max="12" required > Digita la hora <br>
+  <input type="number" id="minutos" name="minutos"  min="1" max="60" required > Digita los minutos <br>
+  <input type="number" id="segundos" name="segundos" required > Digita los segundos <br><br>
+  <h2 id="resultado"></h2>
+  <button onclick="calcular()"> Calcular segundos</button>
+  <br><br><br><hr>
+
+
+  <h1>Ejercicio 2</h1>
+  <!-- 2. Hacer un programa para ingresar el radio de un circulo y se reporte su área
+  y la longitud de la circuferencia.
+  ** r = radio
+  ** área = pi * r^2
+  ** longitud = 2 * pi * r -->
+  <input type="number" id="radio" name="radio"> Digita el radio del circulo
+  <h2 id="area"></h2>
+  <h2 id="longitud"></h2>
+  <button onclick="calcularAL()"> Calcular área y longitud</button>
+  <br><br><br><hr>
+
+
+  <h1>Ejercicio 3</h1>
+  <!-- Un maestro desea saber que porcentaje de hombres y que porcentaje de
+  mujeres hay en un grupo de estudiantes.  -->
+  <input type="number" id="mujeres"> Digita la cantidad de mujeres <br>
+  <input type="number" id="hombres"> Digita la cantidad de hombres <br>
+  <h2 id="total"></h2>
+  <h3 id="porcentajeM"></h3>
+  <h3 id="porcentajeH"></h3>
+  <button onclick="calcularPorcentajes()">Calcular porcentaje</button>
+  
+
+
+</body>
+<script src="js/solucion1.js"></script>
+<script src="js/solucion2.js"></script>
+<script src="js/solucion3.js"></script>
+</html>
